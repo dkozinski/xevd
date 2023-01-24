@@ -1,0 +1,131 @@
+xevd-base (0.4.1-1ubuntu1) bionic; urgency=medium
+
+  [ Dawid Kozinski ]
+  * Initial release. (Closes: #XXXXXX)
+
+  [ Minsoo Park ]
+  * Initial commit
+  * refactoring files
+  * main profile
+  * modification readme
+
+  [ Jamaika1 ]
+  * Fix multiple definition of 'intra_mode_list'
+  * Fix multiple definition of 'intra_mode_list'
+  * Fix multiple definition of 'intra_mode_list'
+  * Fix multiple definition of 'tbl_itxb'
+  * remove this "intra_mode_list"
+  * remove this "intra_mode_list"
+  * Add static to "intra_mode_list"
+
+  [ Minsoo Park ]
+  * Update to align with ETM 7.3
+
+  [ mss.park ]
+  * modification and fix
+
+  [ MInsoo Park ]
+  * optimization and cleanup
+  * fix to compile on gcc-11
+  * modification of baseline deblocking for multi-threading
+  * update baseline deblocking filter
+
+  [ Dawid Kozinski ]
+  * Added xevd prefixes to function names to prevent symbol duplications issue (collisions with symbols from libxeve library)
+  * Scope of __cpuid and __xgetbv functions have been limited to xevd_util object file to prevent symbol duplications issue  (collisions with symbols from libxeve library)
+
+  [ pchirag ]
+  * bug fixed for writing yuv400 10 bit output case and also crop flags for yuv400 case
+
+  [ MInsoo Park ]
+  * clean-up wrong name
+
+  [ pchirag ]
+  * Multicore operation between entropy decode and rest of the reconstruction functionality in-case more than 2 task in single tile case and some minor optimizations
+  * Support for multiple SPS, resolution change at SPS
+  * Set the max number of SPS to 16
+  * fix the merge issue with pull#14 and #15
+
+  [ washish ]
+  * Fix for crash when when get_extra_config is enabled
+  * fix for baseline crash in extra config
+
+  [ Kwang Pyo Choi ]
+  * fixed nal_unit_length parsing
+  * added xevd_info() function
+
+  [ MInsoo Park ]
+  * bugfix for main profile
+  * fix for wrong usage of sps_array
+  * rename variable
+  * clean-up (remove OPL)
+
+  [ Mamatha N Hosmane/AI Visual Processing /SRI-Bangalore/Staff Engineer/Samsung Electronics ]
+  * Added support to decode sei userdata_unregistered message
+  * Added support to decode sei userdata_unregistered message
+
+  [ Dariusz Frankiewicz ]
+  * Added automatic build workflow for Github actions
+  * Update build.yml
+  * Update README.md
+
+  [ MInsoo Park ]
+  * fix for multiple-IDR
+  * updated to support multi-IDR
+  * update
+
+  [ Dawid Kozinski ]
+  * Configured NSIS and DEB generators for binary windows installer and deb packages
+  * Added to README.md file instruction on generating Windows installer and DEB packages for XEVD
+  * Changes following code review
+  * Added to CMakeLists.txt reading from file and parsing xevd version string
+  * Fixed error in CMakeLists.txt
+  * Fixed another one error in CMakeLists.txt
+
+  [ Mamatha N Hosmane/AI Video Processing /SRI-Bangalore/Staff Engineer/Samsung Electronics ]
+  * valid right nbr access modification, max_coding_delay and fps support added, multi tile fix, unaligned resolution compliance fix
+
+  [ Dariusz Frankiewicz ]
+  * Add GitHub Actions workflow for preparing packages
+  * Add Github Action for automatically update version
+
+  [ Dawid Kozinski ]
+  * Changes in CMakeLists.txt files needed to build a project for Windows in the MinGW environment using the MSVC compiler
+
+  [ GitHub Actions Bot ]
+  * Updated version file
+
+  [ washish ]
+  * xevd neon code for baseline & mainline
+  * remove redundant files
+  * bug fix
+  * removed camelcase for a variable
+
+  [ Mamatha N Hosmane/AI Video Processing /SRI-Bangalore/Staff Engineer/Samsung Electronics ]
+  * XEVD Main profile Inverse transform NEON and AVX intrinsics support added
+
+  [ Dariusz Frankiewicz ]
+  * Update prepare_packages.yml
+
+  [ Mamatha N Hosmane/AI Video Processing /SRI-Bangalore/Staff Engineer/Samsung Electronics ]
+  * XEVD Main profile Inverse transform NEON and AVX intrinsics support added
+  * XEVD Main profile Inverse transform NEON and AVX intrinsics support added
+
+  [ Dawid Kozinski ]
+  *  Provided new git-tag based way of versioning
+  * Changes following code review
+
+  [ Mamatha N Hosmane/AI Video Processing /SRI-Bangalore/Staff Engineer/Samsung Electronics ]
+  * Code satbilization fixes added based on the static/dynamic memory analysis
+
+  [ Dariusz Frankiewicz ]
+  * Dev actions (#1)
+
+  [ Dawid Kozinski ]
+  * Provided support for handling PTS and DTS timestaps while decoding
+
+  [ Mamatha N Hosmane/AI Video Processing /SRI-Bangalore/Staff Engineer/Samsung Electronics ]
+  * Stabilization fix added based on analysis hub issues
+  *  Right neighbor access modified based on ETM understanding, further cleanup
+
+ -- Dawid Kozinski <dkozinsk@interia.pl>  Mon, 23 Jan 2023 12:29:43 +0100

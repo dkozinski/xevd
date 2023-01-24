@@ -1,0 +1,35 @@
+Source: xevd-main
+Priority: optional
+Maintainer: Dawid Kozinski <dkozinsk@interia.pl>
+Uploaders: Dawid Kozinski <dkozinsk@interia.pl>
+Build-Depends: cmake, debhelper (>= 10)
+Standards-Version: 4.1.2
+Section: libs
+Homepage: https://github.com/mpeg5/xevd
+Vcs-Git: https://github.com/mpeg5/xevd.git
+#Vcs-Browser: https://github.com/mpeg5/xevd.git
+
+Package: xevd-main-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends: xevd-main1 (= ${binary:Version}), ${misc:Depends}
+Description: eXtra-fast Essential Video Decoder (XEVD)- Main Profile (development files)
+ The eXtra-fast Essential Video Decoder (XEVD) is an opensource and fast MPEG-5 EVC decoder.
+ MPEG-5 Essential Video Coding (EVC) is a video compression standard of ISO/IEC Moving Picture Experts Group (MPEG).
+ The main goal of the EVC is to provide a significantly improved compression capability over existing video coding standards with timely publication of terms.
+ The EVC defines two profiles, including "Baseline Profile" and "Main Profile".
+ The "Baseline profile" contains only technologies that are older than 20 years or otherwise freely available for use in the standard.
+ In addition, the "Main profile" adds a small number of additional tools, each of which can be either cleanly disabled or switched to the corresponding baseline tool on an individual basis.
+
+Package: xevd-main1
+Architecture: any
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: eXtra-fast Essential Video Decoder (XEVD)- Main Profile 
+ The eXtra-fast Essential Video Decoder (XEVD) is an opensource and fast MPEG-5 EVC decoder.
+ MPEG-5 Essential Video Coding (EVC) is a video compression standard of ISO/IEC Moving Picture Experts Group (MPEG).
+ The main goal of the EVC is to provide a significantly improved compression capability over existing video coding standards with timely publication of terms.
+ The EVC defines two profiles, including "Baseline Profile" and "Main Profile".
+ The "Baseline profile" contains only technologies that are older than 20 years or otherwise freely available for use in the standard.
+ In addition, the "Main profile" adds a small number of additional tools, each of which can be either cleanly disabled or switched to the corresponding baseline tool on an individual basis.

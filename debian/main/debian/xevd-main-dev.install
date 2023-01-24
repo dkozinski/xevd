@@ -1,0 +1,4 @@
+usr/include/xevd/*
+usr/lib/*/lib*.so
+usr/lib/*/xevd/*
+usr/lib/*/pkgconfig/*
